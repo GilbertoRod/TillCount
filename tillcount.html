@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TillCount</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Arvo:wght@400;700&family=Oxygen:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <br>
+    <center><p class="page-title">TillCount</p></center>
+    <p class="target-para"><b>Expected Amount: $</b> <input type="number" class="target-input" id="target" onkeydown="handleOverShortKeyDown(event);" placeholder="0.00"></p>
+    <br>
+    <hr class="top-hr">
+    <section class="middle-section">
+      <p class="bill-title"><big><b><u>Bills</u></b></big></p>
+      <div class="num-grid">
+        <div class="grid-div">$100s<br><input type="number" class="input-num" id="hundred-bill" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div class="grid-div">$50s<br><input type="number" class="input-num" id="fifty-bill" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div class="grid-div">$20s<br><input type="number" class="input-num" id="twenty-bill" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div class="grid-div">$10s<br><input type="number" class="input-num" id="ten-bill" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div class="grid-div">$5s<br><input type="number" class="input-num" id="five-bill" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div class="grid-div">$2s<br><input type="number" class="input-num" id="two-bill" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div class="grid-div">$1s<br><input type="number" class="input-num" id="one-bill" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+      </div>
+      <br><br><br><p class="coin-title"><big><b><u>Coins</u></b></big></p>
+      <div class="num-grid" id="coins">
+        <div>&#162;.50s<br><input type="number" class="input-num" id="fifty-cent" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div>&#162;.25s<br><input type="number" class="input-num" id="twentyfive-cent" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div>&#162;.10s<br><input type="number" class="input-num" id="ten-cent" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div>&#162;.05s<br><input type="number" class="input-num" id="five-cent" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div>&#162;.01s<br><input type="number" class="input-num" id="one-cent" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+      </div>
+      
+      <br><br><br><p><big><b><u>Rolls of Coins</u></b></big></p>
+      <div class="num-grid" id="rolls">
+        <div>Quarters<br><span class="roll-num">$10</span><br><input type="number" class="input-num" id="quarter-roll" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div>Dimes<br><span class="roll-num">$5</span><br><input type="number" class="input-num" id="dime-roll" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div>Nickels<br><span class="roll-num">$2</span><br><input type="number" class="input-num" id="nickel-roll" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+        <div>Pennies<br><span class="roll-num">&#162;50</span><br><input type="number" class="input-num" id="penny-roll" onkeydown="handleOverShortKeyDown(event);" onkeyup="addToTotal(event);"></div>
+      </div>
+    </section>
+    <hr class="bottom-hr">
+    <div class="bottom-calc">
+      <div class="over-under-container">
+        <p class="total-amount">Total: $<span class="total-number-value">0</span></p>
+        <p class="over-under"></p>
+      </div>
+      <div class="final-steps">
+        <button title="Calculate Over/Short" class="calc-button" onclick="calculate();">Calculate</button>
+        <button title="reset values" class="reset-button" onclick="reset();">Reset</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="footer-rights">Copyright &copy; 2023, All Rights Reserved</span><br><span class="footer-name">Gilberto Rodriguez</span>
+  </footer>
+  <script src="javascript/script.js"></script>
+</body>
+</html>

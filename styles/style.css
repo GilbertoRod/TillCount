@@ -1,0 +1,264 @@
+body {
+  background-color:rgb(98, 140, 175);
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+  color: rgb(12,30,88);
+  font-size: 20px;
+}
+
+.container {
+  font-family:arvo;
+}
+
+.page-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Agbalumo;
+  color: rgb(170,31,56);
+}
+
+.target-para {
+  margin-bottom: 0px;
+}
+
+input {
+  background-color: cornsilk;
+  border: none;
+}
+
+.target-input {
+  height: 30px;
+  border: none;
+  width: 120px;
+  border-radius: 5px;
+  font-family: arvo;
+  font-size: 16px;
+  
+}
+
+hr {
+  border-color: rgb(170,31,56);
+}
+
+.top-hr {
+  margin-bottom: 0px;
+  margin-left: -23px;
+  margin-right: -23px;
+}
+
+.middle-section {
+  background-color: rgb(79, 118, 153);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 33px;
+  margin-left: -23px;
+  margin-right: -23px;
+  padding-right:33px
+}
+
+.bill-title {
+  margin-top: 0px;
+}
+
+u {
+  text-decoration-color: rgb(170,31,56);
+}
+
+.num-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 60px;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.grid-div {
+  padding-right: 0px;
+  width: min-content;
+}
+
+.input-num {
+  width: 50px;
+  height: 35px;
+  border-radius: 5px;
+  font-family: arvo;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.coin-title {
+  margin-bottom: -15px;
+}
+
+#coins {
+  margin-top: 30px;
+}
+
+#rolls {
+  margin-bottom: 0px;
+}
+
+.roll-num {
+  font-size: 20px;
+}
+
+.bottom-hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -23px;
+  margin-right: -23px;
+}
+
+.bottom-calc {
+  padding-right: 50px;
+  padding-top:10px;
+}
+
+.over-under-container {
+  font-weight: bold;
+  font-family: roboto;
+}
+
+.total-amount {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.over-under {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-size: 18px;
+  margin-right: 17.5px;
+}
+
+.final-steps {
+  display: flex;
+  justify-content:left;
+  margin-top: 10px;
+}
+
+.calc-button {
+  color: cornsilk;
+  margin-right: 0px;
+  text-align: left;
+  border: 1px solid rgb(12,30,88);
+  height:40px;
+  width: 90px;
+  font-family:roboto;
+  background-color: rgb(170,31,56);
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 2px;
+  transition: background-color .15s;
+  
+}
+
+.calc-button:hover {
+  background-color: rgb(173, 70, 89);
+}
+
+.reset-button {
+  color: cornsilk;
+  margin-right: 0px;
+  text-align: left;
+  border: 1px solid rgb(170,31,56);
+  height:40px;
+  width: 90px;
+  font-family:roboto;
+  background-color: rgb(12,30,88);
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 80px;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.reset-button:hover {
+  background-color: rgb(41, 53, 95);
+}
+
+footer {
+  margin-top: 120px;
+  font-size: 15px;
+  color: rgb(223, 222, 222);
+  font-family: roboto;
+  line-height: 20px;
+  float: right;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 980px){
+  .page-title{
+    margin-bottom: 40px;
+  }
+}
+
+
+@media only screen and (max-width: 680px) {
+  .num-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 60px;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  #rolls{
+  margin-bottom: 30px;
+  font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 426px) {
+  .num-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 60px;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  #rolls{
+  margin-bottom: 30px;
+  font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 370px) {
+  .reset-button{
+  margin-left: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 344px) {
+  .target-input{
+    width: 95px;
+  }
+}
+
+
+@media only screen and (max-width: 315px) {
+  .num-grid{
+    row-gap: 30px;
+    column-gap: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 295px) {
+  .num-grid{
+    row-gap: 30px;
+    column-gap: 15px;
+    grid-template-columns: 1fr 60px;
+  }
+}
